@@ -33,50 +33,67 @@
       <div class="row flex-grow-1">
         <div class="col-2 bg-secondary">
           <h4 class="selectable p-2" onclick="app.carsController.viewCars()">Cars</h4>
-          <h4 class="selectable p-2">Houses</h4>
+          <h4 class="selectable p-2" onclick="app.houseController.viewHouse()">Houses</h4>
           <h4 class="selectable p-2">Jobs</h4>
         </div>
         <div class="col-10">
-          <div class="row p-2" id="listings">
-            <!-- CAR TEMPLATE -->
+          <div class="row p-3" id="listing">
             <!-- <div class="col-md-4">
               <div class="bg-white rounded shadow">
-                <img class="img-fluid rounded-top" src="https://thiscatdoesnotexist.com" alt="car image">
+                <img class="img-fluid rounded-top"
+                  src="https://tse1.mm.bing.net/th?id=OIP.NHSJczJkZbt4zupW-H57swHaE8&pid=Api&P=0&w=257&h=172" alt="">
                 <div class="p-3">
-                  <p>Car Model</p>
-                  <p>Car Make</p>
-                  <p>year</p>
-                  <p>description of the car</p>
-                  <p>$500000</p>
-                  <p>Color: #fffffff</p>
+                  <p>Beds</p>
+                  <p>Baths</p>
+                  <p>sqFoot</p>
+                  <p>Price</p>
                 </div>
               </div>
             </div> -->
-            <!-- END OF TEMPLATE -->
           </div>
-          <!-- THIS IS MY FORM -->
+        </div>
+        <!-- <form class="row p-3" action="">
+          <h3 class="col-12">Create a house</h3>
+          <div class="mb-3 col-2">
+            <label for="" class="form-label">Beds</label>
+            <input type="text" class="form-control" name="beds" id="beds" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="mb-3 col-2">
+            <label for="" class="form-label">Baths</label>
+            <input type="text" class="form-control" name="baths" id="baths" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="mb-3 col-2">
+            <label for="" class="form-label">sqFeet</label>
+            <input type="text" class="form-control" name="sqfeet" id="sqfeet" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="mb-3 col-2">
+            <label for="" class="form-label">price</label>
+            <input type="text" class="form-control" name="price" id="price" aria-describedby="helpId" placeholder="">
+            <button>Create</button>
+          </div>
+        </form> -->
+        <!-- THIS IS MY FORM -->
 
 
-          <!-- Modal -->
-          <div class="modal fade" id="new-listing" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
-            aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body bg-white" id="modal-body-slot">
+        <!-- Modal -->
+        <div class="modal fade" id="new-listing" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+          aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body bg-white" id="modal-body-slot">
 
-                  <!-- FORM TEMPLATE GOES HERE -->
 
-                </div>
               </div>
             </div>
           </div>
         </div>
-
-
       </div>
+
+
+    </div>
     </div>
     </div>
   </main>
